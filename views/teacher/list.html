@@ -96,7 +96,7 @@
             <td data-tc-id="{{$value.tc_id}}">
                 <a href="#teacherModal"  class="btn btn-info btn-xs preview" >查 看</a><!--不能为id 渲染很多-->
                 <a href="/teacher/add" class="btn btn-info btn-xs editor" >编 辑</a>
-                <a href="javascript:;" class="btn btn-warning btn-xs eod">注 销</a>
+                <a href="javascript:;" class="btn btn-warning btn-xs eod">{{if $value.tc_status==1}}启用{{else}}注销{{/if}}</a>
             </td>
         </tr>
         {{/each}}
