@@ -9,11 +9,17 @@ require.config({
         language:'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
         validate:'validate/jquery-validate',
         form:'jquery-form/jquery.form',
+        ckeditor:'ckeditor/ckeditor',
         common:'../js/common',
         login:'../js/login',
         teacherList:'../js/teacher-list',
         util:'../js/util',
-        teacherAdd:'../js/teacher-add'
+        teacherAdd:'../js/teacher-add',
+        index:'../js/index',
+        courseList:'../js/course-list',
+        courseAdd:'../js/course-add',
+        courseBasic:'../js/course-basic',
+        coursePicture:'../js/course-picture'
     },
     shim:{
         bootstrap:{
@@ -24,6 +30,9 @@ require.config({
         },
         validate:{
             deps:['jquery']
+        },
+        ckeditor:{
+            exports:'CKEDITOR'
         }
     }
 });
