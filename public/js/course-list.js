@@ -1,4 +1,4 @@
-define(['jquery','template','util'],function($,template,util){
+define(['jquery','template','util','state'],function($,template,util){
     util.getMenu('/course/list');
     $.ajax({
         type:'get',

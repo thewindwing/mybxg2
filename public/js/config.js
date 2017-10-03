@@ -10,6 +10,9 @@ require.config({
         validate:'validate/jquery-validate',
         form:'jquery-form/jquery.form',
         ckeditor:'ckeditor/ckeditor',
+        uploadify:'uploadify/jquery.uploadify.min',
+        jcrop:'jcrop/js/Jcrop',
+        echarts:'echarts/echarts.min',
         common:'../js/common',
         login:'../js/login',
         teacherList:'../js/teacher-list',
@@ -19,7 +22,9 @@ require.config({
         courseList:'../js/course-list',
         courseAdd:'../js/course-add',
         courseBasic:'../js/course-basic',
-        coursePicture:'../js/course-picture'
+        coursePicture:'../js/course-picture',
+        courseLesson:'../js/course-lesson',
+        state:'../js/state'
     },
     shim:{
         bootstrap:{
@@ -33,6 +38,12 @@ require.config({
         },
         ckeditor:{
             exports:'CKEDITOR'
+        },
+        uploadify:{
+            deps:['jquery']
+        },
+        jcrop:{
+            deps:['jquery']
         }
     }
 });
